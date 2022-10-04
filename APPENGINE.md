@@ -1,4 +1,4 @@
-## STEP 1: Select a project, or create a new one.
+## Step 1: Select a project, or create a new one.
 
 To open Cloud Shell, click Cloud Shell. While these steps show you how to work in Cloud Shell, you can use a similar process when you work in your local environment.
 
@@ -12,7 +12,7 @@ You can use the gcloud CLI to manage your project's resources from the command l
 - When prompted, choose a region that's closest to you.
 - The process is complete when you get this message: "Success! The app is now created."
 
-## STEP 3: Clone a sample app
+## Step 3: Clone a sample app
 
 Instead of creating a new app, clone the sample "Hello, world" app from GitHub:
 ```
@@ -30,7 +30,7 @@ The app consists of:
 - requirements.txt, a text file listing package dependencies that the app requires
 - app.yaml, an App Engine configuration file with the minimum required settings
 
-## STEP 4: Test the app before deploying it
+## Step 4: Test the app before deploying it
 
 To open a shell in Cloud Shell Editor, click the Terminal menu and select New Terminal.
 
@@ -58,7 +58,7 @@ To run your app, use the following command:
 ```
 That records an environment's current package list into requirements.txt.
 
-## STEP 5: Deploy the app
+## Step 5: Deploy the app
 
 Now that you know your app is running correctly, deploy it to App Engine:
 
