@@ -2,10 +2,11 @@
 
 ## Basic
 
-### 01 Hello World
-``` echo "Hi mom" ```
 
-To edit a file, hit
+
+
+### 01 Hello World
+To edit a file in shell, hit
 
 ```
 nano helloworld.sh
@@ -15,10 +16,74 @@ To save and get out of nano, hit `CTR + X` and then hit `Y`.
 To run: `bash helloworld.sh` or `.\helloworld.sh`
 But first you need to give permission: `chmod +x helloworld.sh`
 
+**Basic commands for this lesson:**
+```
+echo 		#to print a message or variable
+chmod 		#to change permissions in files or directories
+exit 		#to exit terminal or connection
+```
+
+
+
+### 02 Variables
+
+```
+read $name  #for user input
+
+name="assign text to a variable"
+
+echo "It will use your variable here: $name"
+```
+
+To use an input directly from shell, like `.\BestDay.sh eggs`, use `$1` for the first parameter
+```
+recipe=$1
+echo "Today I'm going to cook $recipe"
+```
+
+**Basic commands for this lesson:**
+```
+whoami 		#your username
+date 		#current date and time
+pwd			#where in directory you are
+```
+
+
+
+### 03 Basic Math
+```
+echo $SHELL 		#your shell
+echo $USER 			#your userid
+echo $HOSTNAME		#your hostname
+```
+
+To create a new variable name for your system:
+```
+$ bestteam="Corinthians"
+$ echo $bestteam
+```
+That can be used in your script!
+
+But that will be erased as soon as you restart your terminal. To make it permanent, you need to write into a file called `.bashrc`. The `.` means that the file is hidden. That's a script that will run every time the system logs in. 
+
+```
+nano .bashrc
+```
+
+Add `export bestteam="Corinthians"` at the end of the file and log out and log in. 
+
+```
+echo $bestteam		#will equals to Corinthians!
+```
+
+
+
+
 
 ## Cool commands
 
 **Network commands**
+```
 ipconfig
 ipconfig /all
 findstr
@@ -31,13 +96,17 @@ ipconfig /flushdns
 nslookup
 cls
 getmac /v
+```
 
 **Check Battery**
+```
 powercfg /energy
 powercfg /batteryreport
 assoc
+```
 
 **Is your computer slow?**
+```
 chkdsk /f
 chkdsk /r
 sfc /scannnow
@@ -52,7 +121,6 @@ netsh interface ip show address | findstr “IP Address”
 netsh interface ip show dnsservers
 netsh advfirewall set allprofiles state off
 netsh advfirewall set allprofiles state on
-
 ping
 ping -t
 tracert
@@ -65,6 +133,9 @@ route print
 route add
 route delete
 shutdown /r /fw /f /t 0
+```
+
+
 
 ## Resources
 
@@ -97,3 +168,5 @@ shutdown /r /fw /f /t 0
 - [ ] [Web Bos:  Command Line Power User](https://www.youtube.com/watch?v=DP218aBHm1Q&list=PLu8EoSxDXHP7tXPJp5ZmUpuT7sFvrswzf&index=2)
 - [ ] [Youtube: GNU Parallel](https://www.youtube.com/playlist?list=PL284C9FF2488BC6D1)
 - [X] [YouTube: you need to learn BASH Scripting RIGHT NOW!! // EP 1](https://www.youtube.com/watch?v=SPwyp2NG-bE)
+- [X] [YouTube: BASH scripting will change your life](https://www.youtube.com/watch?v=7qd5sqazD7k)
+- [X] [YouTube: this BASH script will make you a MILLIONAIRE](https://www.youtube.com/watch?v=19nN9vgcgmU)
