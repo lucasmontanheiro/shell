@@ -1,7 +1,24 @@
 # shell
 
+## Basic
+
+### 01 Hello World
+``` echo "Hi mom" ```
+
+To edit a file, hit
+
+```
+nano helloworld.sh
+```
+
+To save and get out of nano, hit `CTR + X` and then hit `Y`.
+To run: `bash helloworld.sh` or `.\helloworld.sh`
+But first you need to give permission: `chmod +x helloworld.sh`
+
+
 ## Cool commands
 
+**Network commands**
 ipconfig
 ipconfig /all
 findstr
@@ -79,3 +96,4 @@ shutdown /r /fw /f /t 0
 - [ ] [Udacity: Configuring Linux Web Servers](https://www.udacity.com/course/configuring-linux-web-servers--ud299)
 - [ ] [Web Bos:  Command Line Power User](https://www.youtube.com/watch?v=DP218aBHm1Q&list=PLu8EoSxDXHP7tXPJp5ZmUpuT7sFvrswzf&index=2)
 - [ ] [Youtube: GNU Parallel](https://www.youtube.com/playlist?list=PL284C9FF2488BC6D1)
+- [X] [YouTube: you need to learn BASH Scripting RIGHT NOW!! // EP 1](https://www.youtube.com/watch?v=SPwyp2NG-bE)
