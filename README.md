@@ -2,9 +2,6 @@
 
 ## Basic
 
-
-
-
 ### 01 Hello World
 To edit a file in shell, hit
 
@@ -81,6 +78,12 @@ echo $bestteam		#will equals to Corinthians!
 
 
 ## Cool commands
+
+**Basic commands**
+```
+tree 	// shows the whole directory
+mkdir 	// create a directory
+```
 
 **Network commands**
 ```
