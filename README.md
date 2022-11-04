@@ -2,6 +2,8 @@
 
 ## Basic
 
+<img src="img/layers.jpg">
+
 ### 01 Hello World
 To edit a file in shell, hit
 
