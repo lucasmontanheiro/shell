@@ -141,6 +141,13 @@ shutdown /r /fw /f /t 0
 ```
 
 
+## Changing files permissions
+
+```
+chmod ugo+rwx foldername
+```
+
+
 
 ## Resources
 
